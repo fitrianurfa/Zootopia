@@ -23,12 +23,12 @@ function LandingPage () {
           load more
         </a>
       </div>
-      <img src="src/assets/images/bottom_wave.png" alt="" className="wave "  />
+      <img src="/src/assets/images/bottom_wave.png" alt="" className="wave "  />
     </section>
     <section className="about" id="about">
       <div className="box-container">
         <div className="image">
-          <img src="src/assets/images/about.png" />
+          <img src="/src/assets/images/about.png" />
         </div>
         <div className="content">
           <h3 className="title">you can find all the most popular species</h3>
@@ -59,7 +59,7 @@ function LandingPage () {
       <h2 className="heading">animals</h2>
       <div className="hewan_box">
         <div className="profile">
-          <img src="src/assets/images/animal_1.jpg" />
+          <img src="/src/assets/images/animal_1.jpg" />
           <div className="info">
             <h2 className="name">Lion</h2>
             <p className="bio">
@@ -68,7 +68,7 @@ function LandingPage () {
           </div>
         </div>
         <div className="profile">
-          <img src="src/assets/images/animals_2.jpg" />
+          <img src="/src/assets/images/animals_2.jpg" />
           <div className="info">
             <h2 className="name">Zebra</h2>
             <p className="bio">
@@ -77,7 +77,7 @@ function LandingPage () {
           </div>
         </div>
         <div className="profile">
-          <img src="src/assets/images/animals_3.jpg" />
+          <img src="/src/assets/images/animals_3.jpg" />
           <div className="info">
             <h2 className="name">Panda</h2>
             <p className="bio">
@@ -86,7 +86,7 @@ function LandingPage () {
           </div>
         </div>
         <div className="profile">
-          <img src="src/assets/images/animals_4.jpg" />
+          <img src="/src/assets/images/animals_4.jpg" />
           <div className="info">
             <h2 className="name">Elephant</h2>
             <p className="bio">
@@ -103,25 +103,25 @@ function LandingPage () {
       <h2 className="heading">wahana</h2>
       <div className="box-container">
         <div className="box">
-          <img src="src/assets/images/wahana-1.jpg" alt="" />
+          <img src="/src/assets/images/wahana-1.jpg" alt="" />
           <div className="content">
             <h3 >Terapi Ikan</h3>
           </div>
         </div>
         <div className="box">
-          <img src="src/assets/images/wahana-2.jpg" alt="" />
+          <img src="/assets/images/wahana-2.jpg" alt="" />
           <div className="content">
             <h3 >Speedboat</h3>
           </div>
         </div>
         <div className="box">
-          <img src="src/assets/images/wahana-3.jpeg" alt="" />
+          <img src="/src/assets/images/wahana-3.jpeg" alt="" />
           <div className="content">
             <h3 >ATV</h3>
           </div>
         </div>
         <div className="box">
-          <img src="src/assets/images/wahana-4.jpeg" alt="" />
+          <img src="/assets/images/wahana-4.jpeg" alt="" />
           <div className="content">
             <h3 >Feeding Zoo</h3>
           </div>

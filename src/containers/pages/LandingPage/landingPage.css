@@ -137,7 +137,7 @@ header .login-form h3{
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(./src/assets/images/home.jpg) no-repeat;
+  background: url(/src/assets/images/home.jpg) no-repeat;
   background-size: cover;
   background-position: top;
 }
@@ -418,7 +418,7 @@ header .login-form h3{
 
 
 footer{
-  background: url(src/assets/images/footer.jpg) no-repeat;
+  background: url(/src/assets/images/footer.jpg) no-repeat;
   background-size: cover;
   padding: 3rem 7%;
 }

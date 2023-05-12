@@ -24,10 +24,10 @@ function AnimalForm () {
   const [isUpdate,setIsUpdate] = useState(false)
   const [posEdit, setPosEdit] = useState(null)
   const animalsCollectionRef = collection(db,"animals");
-  const [user, setUser] = useAtom(userAtom);
+  const [, setUser] = useAtom(userAtom);
   const [file, setFile] = useState("");
-  const [data, setData] = useState({});
-  const [per, setPerc] = useState(null);
+  const [, setData] = useState({});
+  const [, setPerc] = useState(null);
 
   const navigate = useNavigate();
   const navigateToLandingPage= ()=> {

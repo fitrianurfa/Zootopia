@@ -68,7 +68,7 @@ function AnimalList () {
           </form>
       </header>
       <section className="home1" id="home">
-        <img src="src/assets/images/bottom_wave.png" alt="" className="wave" />
+        <img src="/src/assets/images/bottom_wave.png" alt="" className="wave" />
       </section>
       <section className="data">
         <h2 className="judul">DATA HEWAN</h2>

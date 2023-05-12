@@ -168,7 +168,7 @@ header .icons div:hover{
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(src/assets/images/animals.jpg) no-repeat;
+  background: url(/src/assets/images/animals.jpg) no-repeat;
   background-size: cover;
   background-position: top;
 }

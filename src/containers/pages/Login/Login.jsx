@@ -43,7 +43,7 @@ useEffect(()=>{
     <div className="login-card-container">
       <div className="login-card">
         <div className="login-card-logo">
-          <img src="src/assets/images/logo.png" alt="logo" className="image"/>
+          <img src="/src/assets/images/logo.png" alt="logo" className="image"/>
         </div>
         <div className="login-card-header">
           <h1>Login</h1>
@@ -51,19 +51,19 @@ useEffect(()=>{
         </div>
         <form onSubmit={handleSubmit} className="login-card-form">
           <div className="form-item">
-            <span>person</span>
+            <span className="form-item-icon material-symbols-rounded">person</span>
             <input
               type="text"
               placeholder="Masukkan Username"
               id="emailForm"
-              autofocus=""
+              autoFocus=""
               required=""
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="form-item">
-            <span >lock</span>
+            <span className="form-item-icon material-symbols-rounded">lock</span>
             <input
               type="password"
               placeholder="Masukkan Password"
@@ -71,17 +71,13 @@ useEffect(()=>{
               required=""
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-
             />
             <button type='submit'>login</button>
           </div>        
         </form>
       </div>
     </div>
-    
-    
   )
-
 }
 
 
