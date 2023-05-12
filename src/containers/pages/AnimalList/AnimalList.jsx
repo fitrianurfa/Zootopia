@@ -50,7 +50,7 @@ function AnimalList () {
 
   return (
     <>
-      <header classname="header">
+      <header>
         <a className="logo" onClick={navigateToLandingPage}>
           {" "}
           <i className="fas fa-paw" /> Zootopia
