@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root{
+  --main: #d86106;
+  --bg: #f1e1d2;
+  --black: #000;
+  --white: #fff;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header .navbar{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 18px;
+    color: #000;
+}
+
+header .login-form{
+    position: absolute;
+    top: 115%;
+    right: -105%;
+    background: var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 35rem;
+    padding: 2rem;
+  }
+  
+  header .login-form.active{
+    right: 2rem;
+    transition: .4s linear;
+  }
+  
+  header .login-form h3{
+    font-size: 2.2rem;
+    color: var(--black);
+    text-transform: uppercase;
+    margin-bottom: .7rem;
+    text-align: center;
+  }
+  
+  header .login-form .box{
+    font-size: 1.5rem;
+    padding: 1rem 1.2rem;
+    border: .1rem solid rgba(0, 0, 0, 0.1);
+    margin: .7rem 0;
+    color: var(--black);
+    width: 100%;
+    text-transform: none;
+  }
+  
+  header .login-form .remember{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: .7rem 0;
+  }
+  
+  header .login-form .remember label{
+    font-size: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+  }
+  
+  header .login-form .btn{
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+  }
+  
+  header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+  }
+  
+  header .logo i{
+    color: var(--main);
+  }
+  
+  header .navbar a{
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1rem;
+  }
+  
+  header .navbar a:hover{
+    color: var(--main);
+  }
+  
+  header .icons div{
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: var(--black);
+  }
+  
+  header .icons div:hover{
+    color: var(--main);
+  }
+  
+  #menu-btn{
+    display: none;
+  }
