@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './login.css'
+import 'material-symbols'
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../../config/firebase';
 import { useAtom, atom } from 'jotai';
