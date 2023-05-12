@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './login.css'
-import 'material-symbols'
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../../config/firebase';
 import { useAtom, atom } from 'jotai';
@@ -51,7 +50,7 @@ useEffect(()=>{
         </div>
         <form onSubmit={handleSubmit} className="login-card-form">
           <div className="form-item">
-            <span className="form-item-icon material-symbols-rounded">person</span>
+            <span>person</span>
             <input
               type="text"
               placeholder="Masukkan Username"
@@ -63,7 +62,7 @@ useEffect(()=>{
             />
           </div>
           <div className="form-item">
-            <span className="form-item-icon material-symbols-rounded">lock</span>
+            <span >lock</span>
             <input
               type="password"
               placeholder="Masukkan Password"
