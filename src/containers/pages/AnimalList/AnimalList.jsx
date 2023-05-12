@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { collection, getDocs} from 'firebase/firestore';
 import { db } from '../../../config/firebase/index';
 import Footer from '../../../components/Footer';
+import bottom_wave from './assets/images/bottom_wave.png'
 
 function AnimalList () {
   const [animals,setanimals] = useState([]);
@@ -68,7 +69,7 @@ function AnimalList () {
           </form>
       </header>
       <section className="home1" id="home">
-        <img src="/src/assets/images/bottom_wave.png" alt="" className="wave" />
+        <img src={bottom_wave}className="wave" />
       </section>
       <section className="data">
         <h2 className="judul">DATA HEWAN</h2>
