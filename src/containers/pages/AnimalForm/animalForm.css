@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+  --main: #ff6e01;
+  --bg: #f1e1d2;
+  --black: #000;
+  --white: #fff;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+html::-webkit-scrollbar{
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--main);
+  border-radius: 5rem;
+}
+
+section{
+  padding: 8rem 7%;
+}
+
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  color: var(--main);
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  padding: 1.2rem 0;
+}
+
+.btn1{
+  font-size: 1.7rem;
+  display: inline-block;
+  background: var(--main);
+  color: var(--white);
+  box-shadow: var(--box-shadow);
+  border-radius: 5rem;
+  padding: 0.9rem 3rem;
+  margin-top: 1rem;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+  width: 145px;
+}
+
+.btn1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: #ff9748;
+  z-index: -1;
+  transition: .3s linear;
+  left: 0;
+}
+
+.btn1:hover::before{
+  width: 100%;
+}
+
+
+/* header */
+
+.header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+
+.header .logo{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+.header .logo i{
+  color: var(--main);
+}
+
+.header .navbar a{
+  font-size: 1.7rem;
+  color: var(--black);
+  margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+  color: var(--main);
+}
+
+.header .icons div{
+  font-size: 2.5rem;
+  margin-left: 1.7rem;
+  cursor: pointer;
+  color: var(--black);
+}
+
+.header .icons div:hover{
+  color: var(--main);
+}
+
+#menu-btn1{
+  display: none;
+}
+
+.main {
+  max-width: 992px;
+  margin: 0 auto;
+  
+}
+h1.main-title {
+  text-align: center;
+  margin-top: 3em;
+  color: #354b53;
+}
+
+.tabel {
+  width: 1440px;
+  font-size: 15px;
+  background-color: #ffffff;
+  height: auto;
+}
+
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+td img {
+  width: 76px;
+  height: 76px;
+  margin-right: .5rem;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+
+.table-container table thead th {
+  padding: 1em;
+  background: #ff6e01;
+  color: black;
+}
+
+
+.table-container table tbody tr:nth-child(even) {
+  background: #ffa661;
+}
+.table-container table tbody tr:nth-child(odd) {
+  background: #ffbd8b;
+}
+@media (max-width: 992px) {
+  .table-container table thead th {
+      display: none;
+  }
+
+  @media (min-width: 182px) {
+    .table-container table thead th {
+        display: none;
+    }
+
+  .table-container table tbody td {
+      display: block;
+      padding: 0.5em;
+  }
+  .table-container table tbody td::before {
+      content: attr(data-title) ": ";
+      color: #ff9748;
+  }
+  .table-container table tbody td[data-title="Deskripsi"]::before {
+      display: block;
+  }
+  .table-container table tbody tr {
+      margin-bottom: 1em;
+      padding: 1em;
+      display: block;
+  }
+}
+}
+
+
+
+/* end */
+
+/* contact */
+
+.contact{
+  background: var(--bg);
+  align-items: center;
+}
+
+.contact form{
+  padding: 2rem 10%;
+  text-align: center;
+}
+
+.contact form .inputBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact form .inputBox input,
+.contact form textarea{
+  font-size: 1.7rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border-radius: .5rem;
+  text-transform: none;
+}
+
+.contact form .inputBox input::placeholder,
+.contact form textarea::placeholder{
+  text-transform: capitalize;
+}
+
+.contact form textarea{
+  height: 15rem;
+  resize: none;
+  width: 100%;
+}
+
+.file-upload {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.file-upload-btn1 {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #ff6e01;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #ff6e01;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn1:hover {
+  background: #f1e1d2;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.file-upload-btn1:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #ff6e01;
+  padding: 60px 0;
+}
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.designed
+{
+    width: 100%;
+    background: #d86106;
+    padding: 8px 100px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}

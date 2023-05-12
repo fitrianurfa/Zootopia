@@ -1,34 +1,22 @@
-import { useState } from 'react'
-import reactLogo from '../../../assets/img/logo/react.svg'
-import './App.css'
-
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import LandingPage from '../LandingPage/LandingPage'
+import Login from '../Login/Login'
+import AnimalForm from '../AnimalForm/AnimalForm'
+import AnimalList from '../AnimalList/AnimalList'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <BrowserRouter>
+      <div className='App'>
+        <Routes>
+          <Route exact path="/" element={<LandingPage />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/AnimalForm" element={<AnimalForm />} />
+          <Route path="/AnimalList" element={<AnimalList />} />
+        </Routes>
       </div>
-      <h1>Haloo Gaess...</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-         Fitri mencoba deploy dengan vercel
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    </BrowserRouter>
   )
 }
 
