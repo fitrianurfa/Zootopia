@@ -1,14 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-body {
+html {
     font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("/src/assets/images/bg.jpg");
-    background-position: center;
-    background-size: cover;
 }
 
 
@@ -64,7 +57,15 @@ body {
 
 
 
-
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/public/assets/images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
 /* Login Card Form */
 .login-card-form {
