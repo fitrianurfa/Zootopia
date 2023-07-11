@@ -41,41 +41,43 @@ useEffect(()=>{
 
 
   return (
-    <div className="login-card-container">
-      <div className="login-card">
-        <div className="login-card-logo">
-          <img src={logo} className="image"/>
-        </div>
-        <div className="login-card-header">
-          <h1>Login</h1>
-          <div>for Admin Only</div>
-        </div>
-        <form onSubmit={handleSubmit} className="login-card-form">
-          <div className="form-item">
-            <span className="form-item-icon material-symbols-rounded">person</span>
-            <input
-              type="text"
-              placeholder="Masukkan Username"
-              id="emailForm"
-              autoFocus=""
-              required=""
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
+    <div className="container">
+      <div className="login-card-container">
+        <div className="login-card">
+          <div className="login-card-logo">
+            <img src={logo} className="image"/>
           </div>
-          <div className="form-item">
-            <span className="form-item-icon material-symbols-rounded">lock</span>
-            <input
-              type="password"
-              placeholder="Masukkan Password"
-              id="passwordForm"
-              required=""
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <button type='submit'>login</button>
-          </div>        
-        </form>
+          <div className="login-card-header">
+            <h1>Login</h1>
+            <div>for Admin Only</div>
+          </div>
+          <form onSubmit={handleSubmit} className="login-card-form">
+            <div className="form-item">
+              <span className="form-item-icon material-symbols-rounded">person</span>
+              <input
+                type="text"
+                placeholder="Masukkan Username"
+                id="emailForm"
+                autoFocus=""
+                required=""
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="form-item">
+              <span className="form-item-icon material-symbols-rounded">lock</span>
+              <input
+                type="password"
+                placeholder="Masukkan Password"
+                id="passwordForm"
+                required=""
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <button type='submit'>login</button>
+            </div>        
+          </form>
+        </div>
       </div>
     </div>
   )
