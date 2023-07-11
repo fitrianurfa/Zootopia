@@ -44,7 +44,7 @@ useEffect(()=>{
     <div className="login-card-container">
       <div className="login-card">
         <div className="login-card-logo">
-          <img src={logo} alt="logo" className="image"/>
+          <img src={logo} className="image"/>
         </div>
         <div className="login-card-header">
           <h1>Login</h1>
