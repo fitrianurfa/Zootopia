@@ -8,10 +8,10 @@ import animal_1 from '../../../assets/images/animal_1.jpg';
 import animals_2 from '../../../assets/images/animals_2.jpg';
 import animals_3 from '../../../assets/images/animals_3.jpg';
 import animals_4 from '../../../assets/images/animals_4.jpg';
-import wahana_1 from '../../../assets/images/wahana_1.jpg';
-import wahana_2 from '../../../assets/images/wahana_2.jpg';
-import wahana_3 from '../../../assets/images/wahana_3.jpeg';
-import wahana_4 from '../../../assets/images/wahana_4.jpeg';
+import wahana_1 from '../../../assets/images/wahana-1.jpg';
+import wahana_2 from '../../../assets/images/wahana-2.jpg';
+import wahana_3 from '../../../assets/images/wahana-3.jpeg';
+import wahana_4 from '../../../assets/images/wahana-4.jpeg';
 
 
 function LandingPage () {
@@ -112,25 +112,25 @@ function LandingPage () {
       <h2 className="heading">wahana</h2>
       <div className="box-container">
         <div className="box">
-          <img src={wahana_1} alt="" />
+          <img src={wahana-1} alt="" />
           <div className="content">
             <h3 >Terapi Ikan</h3>
           </div>
         </div>
         <div className="box">
-          <img src={wahana_2} alt="" />
+          <img src={wahana-2} alt="" />
           <div className="content">
             <h3 >Speedboat</h3>
           </div>
         </div>
         <div className="box">
-          <img src={wahana_3} alt="" />
+          <img src={wahana-3} alt="" />
           <div className="content">
             <h3 >ATV</h3>
           </div>
         </div>
         <div className="box">
-          <img src={wahana_4} alt="" />
+          <img src={wahana-4} alt="" />
           <div className="content">
             <h3 >Feeding Zoo</h3>
           </div>
