@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router";
 import './navbar.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaw } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 
 function Navbar () {
@@ -13,7 +15,7 @@ function Navbar () {
     <header className=".header">
     <a className="logo" onClick={navigateToLandingPage }>
       {" "}
-      <i className="fas fa-paw" /> Zootopia
+      <FontAwesomeIcon icon={faPaw} style={{color: "#ff7300",}} /> Zootopia
     </a>
     <nav className="navbar">
       <a href="#home">HOME</a>
@@ -22,7 +24,8 @@ function Navbar () {
       <a href="#wahana">WAHANA</a>
     </nav>
     <div className="icons">
-      <div id="loginbtn" className="fas fa-user" onClick={navigateToLogin} />
+      <div  />
+      <FontAwesomeIcon icon={faUser} id="loginbtn" onClick={navigateToLogin} />
     </div>
   </header>
   )
