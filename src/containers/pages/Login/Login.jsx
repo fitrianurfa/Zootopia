@@ -6,6 +6,7 @@ import { auth } from '../../../config/firebase';
 import { useAtom, atom } from 'jotai';
 import { useNavigate} from 'react-router-dom';
 import { useEffect } from 'react';
+import logo from '../../../assets/images/logo.png';
 
 export const userAtom = atom(localStorage.getItem('userEmail') ?? null);
 
@@ -43,7 +44,7 @@ useEffect(()=>{
     <div className="login-card-container">
       <div className="login-card">
         <div className="login-card-logo">
-          <img src="/src/assets/images/logo.png" alt="logo" className="image"/>
+          <img src="logo" alt="logo" className="image"/>
         </div>
         <div className="login-card-header">
           <h1>Login</h1>
