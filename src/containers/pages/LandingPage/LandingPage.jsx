@@ -12,7 +12,8 @@ import wahana_1 from '../../../assets/images/wahana_1.jpg';
 import wahana_2 from '../../../assets/images/wahana_2.jpg';
 import wahana_3 from '../../../assets/images/wahana_3.jpeg';
 import wahana_4 from '../../../assets/images/wahana_4.jpeg';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faBookOpen, faBullhorn, faGraduationCap} from '@fortawesome/free-solid-svg-icons'
 
 function LandingPage () {
   const navigate = useNavigate();
@@ -32,12 +33,12 @@ function LandingPage () {
           load more
         </a>
       </div>
-      <img src={bottom_wave} alt="" className="wave "  />
+      <img src={bottom_wave} className="wave "  />
     </section>
     <section className="about" id="about">
       <div className="box-container">
         <div className="image">
-          <img src={about} />
+          <img src={about}/>
         </div>
         <div className="content">
           <h3 className="title">you can find all the most popular species</h3>
@@ -49,15 +50,15 @@ function LandingPage () {
           </p>
           <div className="icons-container">
             <div className="icons">
-              <i className="fas fa-graduation-cap" />
+              <FontAwesomeIcon icon={faGraduationCap} style={{color: "#ff7300",}} size="5x" />
               <h3>we educate</h3>
             </div>
             <div className="icons">
-              <i className="fas fa-bullhorn" />
+              <FontAwesomeIcon icon={faBullhorn} style={{color: "#ff7300",}} size="5x" />
               <h3>we play</h3>
             </div>
             <div className="icons">
-              <i className="fas fa-book-open" />
+              <FontAwesomeIcon icon={faBookOpen} style={{color: "#ff7300",}} size="5x" />
               <h3>getting to know</h3>
             </div>
           </div>
@@ -112,25 +113,25 @@ function LandingPage () {
       <h2 className="heading">wahana</h2>
       <div className="box-container">
         <div className="box">
-          <img src={wahana_1} alt="" />
+          <img src={wahana_1} />
           <div className="content">
             <h3 >Terapi Ikan</h3>
           </div>
         </div>
         <div className="box">
-          <img src={wahana_2} alt="" />
+          <img src={wahana_2}/>
           <div className="content">
             <h3 >Speedboat</h3>
           </div>
         </div>
         <div className="box">
-          <img src={wahana_3} alt="" />
+          <img src={wahana_3}  />
           <div className="content">
             <h3 >ATV</h3>
           </div>
         </div>
         <div className="box">
-          <img src={wahana_4} alt="" />
+          <img src={wahana_4} />
           <div className="content">
             <h3 >Feeding Zoo</h3>
           </div>
