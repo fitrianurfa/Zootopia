@@ -15,7 +15,7 @@ function Navbar () {
     <header className=".header">
     <a className="logo" onClick={navigateToLandingPage }>
       {" "}
-      <FontAwesomeIcon icon={faPaw} style={{color: "#ff7300",}} /> Zootopia
+      <FontAwesomeIcon icon={faPaw} style={{color: "#ff7300",}} size="xl"/> Zootopia
     </a>
     <nav className="navbar">
       <a href="#home">HOME</a>
@@ -25,7 +25,7 @@ function Navbar () {
     </nav>
     <div className="icons">
       <div  />
-      <FontAwesomeIcon icon={faUser} id="loginbtn" onClick={navigateToLogin} />
+      <FontAwesomeIcon icon={faUser} size="l" id="loginbtn" onClick={navigateToLogin} />
     </div>
   </header>
   )
