@@ -38,16 +38,13 @@ function Footer () {
         <div className="box">
           <h3>quick links</h3>
           <a href="#home" className="links">
-            <FontAwesomeIcon icon={faArrowRight} style={{color: "#ff7300",}} />
-            home
+            <FontAwesomeIcon icon={faArrowRight} style={{color: "#ff7300",}} /> home
           </a>
           <a  href="#about" className="links">
-            <FontAwesomeIcon icon={faArrowRight} style={{color: "#ff7300",}} />
-            about
+            <FontAwesomeIcon icon={faArrowRight} style={{color: "#ff7300",}} /> about
           </a>
           <a  href="#animals" className="links">
-            <FontAwesomeIcon icon={faArrowRight} style={{color: "#ff7300",}} />
-            animals
+            <FontAwesomeIcon icon={faArrowRight} style={{color: "#ff7300",}} /> animals
           </a>
         </div>
         <div className="box">
