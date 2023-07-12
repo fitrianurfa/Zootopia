@@ -11,6 +11,9 @@ import {addDoc, collection, deleteDoc, doc, getDocs, updateDoc,  onSnapshot} fro
 import { useNavigate} from 'react-router-dom';
 import { useAtom } from 'jotai';
 import { userAtom } from '../Login/Login';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaw } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 function AnimalForm () {
   const [animals,setanimals] = useState([]);
@@ -212,11 +215,10 @@ function AnimalForm () {
       <header className="header">
         <a onClick={navigateToLandingPage} className="logo">
           {" "}
-          <i className="fas fa-paw" /> zootopia
+          <FontAwesomeIcon icon={faPaw} style={{color: "#ff7300",}} size="xl"/> zootopia
         </a>
         <div className="icons">
-          <div id="login-btn1" className="fas fa-user" onClick={handleLogout}/>
-          <div id="menu-btn1" className="fas fa-bars" />
+        <FontAwesomeIcon icon={faUser} size="l" id="loginbtn" onClick={handleLogout} />
         </div>
       </header>
       <section className="contact" id="contact">
