@@ -6,6 +6,8 @@ import { collection, getDocs} from 'firebase/firestore';
 import { db } from '../../../config/firebase/index';
 import Footer from '../../../components/Footer';
 import bottom_wave from '../../../assets/images/bottom_wave.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaw } from '@fortawesome/free-solid-svg-icons'
 
 function AnimalList () {
   const [animals,setanimals] = useState([]);
@@ -54,7 +56,7 @@ function AnimalList () {
       <header>
         <a className="logo" onClick={navigateToLandingPage}>
           {" "}
-          <i className="fas fa-paw" /> Zootopia
+          <FontAwesomeIcon icon={faPaw} style={{color: "#ff7300",}} size="xl"/> Zootopia
         </a>
         <nav className="navbar">
         </nav>
@@ -69,7 +71,7 @@ function AnimalList () {
           </form>
       </header>
       <section className="home1" id="home">
-        <img src={bottom_wave} className="wave" />
+        <img src={bottom_wave}className="wave" />
       </section>
       <section className="data">
         <h2 className="judul">DATA HEWAN</h2>
